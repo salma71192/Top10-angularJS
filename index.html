@@ -6,7 +6,7 @@
     <link href="css/main.css" rel="stylesheet" />
     <script src="js/vendor/angular.min.js"></script>
   </head>
-  <body>
+  <body ng-app="Top10App">
     <div class="header">
       <div class="container">
         10
@@ -17,13 +17,11 @@
       <div class="container">
         <div class="content">
 
-          <!--
-          TODO: Loop through shows and display each one with this HTML
-          <div>
+          <div ng-repeat="show in shows">
             <div class="rank">{{$index + 1}}</div>
-            
-            </div>
-          -->
+            <tv-show info="show"></tv-show>
+          </div>
+          
 
         </div>
       </div>
