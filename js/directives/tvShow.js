@@ -4,6 +4,6 @@ app.directive('tvShow', function() {
     scope: {
       info: '='
     },
-    templateUrl: 'js/directives/show.html'
+    templateUrl: 'js/directives/tvShow.html'
   }
 })

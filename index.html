@@ -17,10 +17,11 @@
       <div class="container">
         <div class="content">
 
+          
           <div ng-repeat="show in shows">
-            <div class="rank">{{$index + 1}}</div>
-            <show info="show"></show>
-          </div>
+            <div class="rank" >{{$index + 1}}</div>
+              <tv-show info="show"></tv-show>
+            </div>
           
 
         </div>
@@ -38,6 +39,5 @@
 
     <!-- Services -->
     <script src="js/services/shows.js"></script>
-
   </body>
 </html>
